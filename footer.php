@@ -15,6 +15,7 @@ footer {
     width:100%;
     font-family: 'Noto Sans Thai', sans-serif;
     padding-bottom: 2rem;
+    border-top: 1px solid #D9D9D9;
 }
 footer .container {
   display: flex;
@@ -55,7 +56,6 @@ footer a:hover{
 </head>
 <footer>
 
-<hr width=100% size=2 color="#A0A0A0">
 <div class="container">
     <div class="column">
       <h3>ติดต่อเรา</h3>
