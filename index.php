@@ -1,3 +1,7 @@
+<?php
+session_start();
+require_once 'connect.php';
+?>
 <!DOCTYPE html>
 <html>
 <body>
@@ -12,11 +16,9 @@ include("navbar.php")
 <input type="submit" name="Submit" value="Login" /></input>
 </form>
 <?php
-require_once 'connect.php';
 $sql = "SELECT username, password FROM Username";
 $result = $mysqli -> query($sql);
 $row = $result -> fetch_array(MYSQLI_NUM);
-printf ("%s (%s)\n", $row[0], $row[1]);
 ?>
 </body>
 <?php

@@ -1,9 +1,8 @@
-<html>
-<head>
-    <link rel="stylesheet" href="test.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="test.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Thai&display=swap" rel="stylesheet">
 <style>
 .navbarmenu{
     display: flex;
@@ -29,8 +28,6 @@
     padding: 1%;
 }
 </style>
-</head>
-<body>
 <div class="navbar">
         <div class="navbarmenu">
             <div>อัลบั้มสอด</div>
@@ -41,8 +38,7 @@
             <div>
                 <!-- profile icon -->
             </div>
-            <div>asdasd</div>
+            <div><?php if($_SESSION['user_username']!="") { ?>Hello! <?php echo $_SESSION['user_username']; } ?></div>
+            <div><?php if($_SESSION['user_username']!="") { ?><a href="logout.php">ออกจากระบบ</a><?php } ?></div>
         </div>
     </div>
-</body>
-</html> 
