@@ -1,5 +1,4 @@
 
-<link rel="stylesheet" href="test.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Thai&display=swap" rel="stylesheet">
@@ -38,7 +37,8 @@
             <div>
                 <!-- profile icon -->
             </div>
-            <div><?php if($_SESSION['user_username']!="") { ?>Hello! <?php echo $_SESSION['user_username']; } ?></div>
-            <div><?php if($_SESSION['user_username']!="") { ?><a href="logout.php">ออกจากระบบ</a><?php } ?></div>
+            <div><?php if(!isset($_SESSION['user_username'])) { ?><a href="login.php">Log in / Sign in </a><?php } ?></div>
+            <div><?php if(isset($_SESSION['user_username'])) { ?>Hello! <?php echo $_SESSION['user_username']; } ?></div>
+            <div><?php if(isset($_SESSION['user_username'])) { ?><a href="logout.php">ออกจากระบบ</a><?php } ?></div>
         </div>
     </div>

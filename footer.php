@@ -61,7 +61,7 @@ footer a:hover{
       <h3>ติดต่อเรา</h3>
       <ul>
         <li><a href="#">FB : Polaroid Shop</a></li>
-        <li><a href="#">Line :@Polaroid_shop</a></li>
+        <li><a href="#">Line : @Polaroid_shop</a></li>
       </ul>
     </div>
     <div class="column">

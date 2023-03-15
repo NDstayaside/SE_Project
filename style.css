@@ -1,0 +1,19 @@
+/* <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Thai&display=swap" rel="stylesheet"> */
+@import url('https://fonts.googleapis.com/%22%3E');
+@import url('https://fonts.gstatic.com/');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Thai&display=swap');
+body{
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+.form-input {
+    width:50%;
+    height:2rem;
+    margin-top: 1rem;
+}
+
+.form-button {
+    height:2rem;
+    margin-top: 1rem;
+}
